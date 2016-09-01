@@ -35,7 +35,7 @@ server:
 neo4j:
   uri: http://neo4jdb:7474/db/data/
   username: neo4j
-  password: graphdb
+  password: neo4j
   bootstrap: false
 aws:
   s3:

@@ -1,13 +1,10 @@
 {
-  "id": "/rating",
+  "id": "/movieapps/movie-services/rating",
   "cmd": null,
   "cpus": 0.3,
   "mem": 1000,
   "disk": 0,
   "instances": 1,
-  "acceptedResourceRoles": [
-    "slave_public"
-  ],
   "container": {
     "type": "DOCKER",
     "volumes": [],

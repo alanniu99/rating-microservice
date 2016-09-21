@@ -9,7 +9,7 @@
     "type": "DOCKER",
     "volumes": [],
     "docker": {
-      "image": "dockerniu/rating-microservice",
+      "image": "dockerniu/rating-microservice:${short_commit}",
       "network": "BRIDGE",
       "portMappings": [
         {

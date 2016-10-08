@@ -104,7 +104,7 @@
             <name>Spring Releases</name>
             <url>http://repo.spring.io/libs-release-local</url>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
         </repository>
     </repositories>
@@ -122,7 +122,7 @@
             <name>Spring Milestones</name>
             <url>http://repo.spring.io/libs-milestone-local</url>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
@@ -160,6 +160,11 @@
                             <targetPath>/</targetPath>
                             <directory>${project.build.directory}</directory>
                             <include>${project.build.finalName}.jar</include>
+                        </resource>
+                         <resource>
+                        <targetPath>/</targetPath>
+                        <directory>${project.basedir}/src/main/resources/static</directory>
+                        <include>ratings.csv</include>                        
                         </resource>
                     </resources>
                 </configuration>

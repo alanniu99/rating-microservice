@@ -39,7 +39,7 @@ neo4j:
   bootstrap: false
 aws:
   s3:
-    url: https://s3.amazonaws.com/dataset-demos
+    url: file:///data
 eureka:
   client:
     serviceUrl:

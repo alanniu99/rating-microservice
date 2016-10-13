@@ -35,12 +35,12 @@ server:
 aws:
   s3:
     url: file:///data
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
-  instance:
-    preferIpAddress: true
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://discovery:8761/eureka/
+#  instance:
+#    preferIpAddress: true
 ribbon:
   eureka:
-    enabled: true
+    enabled: false

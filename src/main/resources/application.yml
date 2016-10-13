@@ -35,15 +35,15 @@ server:
 aws:
   s3:
     url: file:///data
-#eureka:
-#  client:
-#    serviceUrl:
-#      defaultZone: http://discovery:8761/eureka/
-#  instance:
-#    preferIpAddress: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+  instance:
+    preferIpAddress: true
 ribbon:
   eureka:
-    enabled: false
+    enabled: true
 neo4j:
   uri: http://neo4j:7474/db/data/
   username: neo4j

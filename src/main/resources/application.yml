@@ -44,3 +44,8 @@ aws:
 ribbon:
   eureka:
     enabled: false
+neo4j:
+  uri: http://neo4j:7474/db/data/
+  username: neo4j
+  password: neo4j
+  bootstrap: true

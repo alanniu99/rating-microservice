@@ -36,7 +36,7 @@ public class Application {
 	String datasetUrl;
 
 	@Value("${neo4j.bootstrap}")
-	Boolean bootstrap;
+	Boolean bootstrap=true;
 
 	public static void main(String[] args) {
 		System.setProperty("org.neo4j.rest.read_timeout", "250");

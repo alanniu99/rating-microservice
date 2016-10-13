@@ -21,10 +21,6 @@
       "privileged": false,
       "parameters": [
         {
-          "key": "hostname",
-          "value": "rating"
-        },
-        {
           "key": "net",
           "value": "microservice"
         },

@@ -95,7 +95,7 @@ public class GraphDatabaseConfiguration extends Neo4jConfiguration {
         		FileUtils.deleteRecursively(new File("user.db")); 
         		 return new GraphDatabaseFactory().newEmbeddedDatabase("user.db");
         	}catch(IOException ex){
-        		 throw new RuntimeException(e); 
+        		 throw new RuntimeException(ex); 
         	}
            
         	//setGraphDatabaseService(new SpringCypherRestGraphDatabase(url, username, password));

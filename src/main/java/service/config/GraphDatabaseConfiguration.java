@@ -1,8 +1,9 @@
 package service.config;
 
-import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.factory.GraphDatabaseFactory;
 import org.neo4j.kernel.impl.util.FileUtils; 
+import org.neo4j.graphdb.GraphDatabaseService; 
+import org.neo4j.kernel.EmbeddedGraphDatabase; 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -17,6 +18,7 @@ import org.springframework.data.neo4j.config.Neo4jConfiguration;
 import org.springframework.data.neo4j.rest.SpringCypherRestGraphDatabase;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import java.io.File; 
 import java.io.IOException;
 import java.util.Arrays;
 
